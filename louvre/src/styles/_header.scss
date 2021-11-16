@@ -1,0 +1,180 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: $background-header;
+    &__container {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0 10px 0;
+    }
+    &__logo-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__menu {
+        width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__menu-item {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    &__menu-item a {
+        display: inline-block;
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+    }
+    &__menu-link {
+        font-style: normal;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 2px;
+        color: #ffff;
+        transition: all 0.6s;
+        &:hover {
+            transition: all 0.6s;
+            color: #e45353;
+        }
+    }
+    @media (min-width: 1765px) and (max-width: 2560px) {
+        &__container {
+            padding: 25px 0;
+        }
+        &__text {
+            font-size: 25px;
+        }
+        &__menu-link {
+            font-size: 25px;
+        }
+        &__button {
+            font-size: 26px;
+        }
+        &__dropdown {
+            & a {
+                font-size: 25px;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        &__menu {
+            display: none;
+        }
+        .mobile-menu {
+            display: block;
+        }
+    }
+}
+
+.mobile-menu {
+    display: none;
+    z-index: 999999999999;
+    &__btn,
+    &__btn1 {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 30px;
+        cursor: pointer;
+        transition: 0.4s;
+        z-index: 9999999999999999;
+        right: 2%;
+        top: 11px;
+    }
+    &__btn1 {
+        top: 3%;
+    }
+    &__icon {
+        display: block;
+        position: relative;
+        background: $color-hover;
+        width: 90%;
+        height: 4px;
+        transition: 0.4s;
+    }
+    &__icon::after,
+    &__icon::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background: $color-hover;
+        width: 100%;
+        height: 4px;
+        transition: 0.4s;
+    }
+    &__icon::after {
+        top: 8px;
+    }
+    &__icon::before {
+        top: -8px;
+    }
+    &__container {
+        position: absolute;
+        text-align: start;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        top: 52px;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        height: 0;
+        opacity: 1;
+        transition: 0.5s;
+        overflow: hidden;
+        background: $color-hover;
+        padding-left: 5vh;
+    }
+    &__list {
+        transition: 0.5s;
+        list-style: none;
+    }
+    &__item {
+        font-size: 26px;
+        padding-bottom: 5px;
+    }
+    &__link {
+        text-decoration: none;
+        color: #2f2f3f;
+        font-size: 15px;
+        font-weight: 900;
+        transition: all 0.6s;
+        &:hover {
+            transform: all 0.6s;
+            color: #e45353;
+        }
+    }
+    &__checkbox {
+        display: none;
+    }
+    &__checkbox:checked~&__nav {
+        opacity: 1;
+    }
+    &__checkbox:checked~&__container {
+        height: 285px;
+    }
+    &__checkbox:checked~&__btn &__icon {
+        background: transparent;
+    }
+    &__checkbox:checked~&__btn &__icon::before,
+    &__checkbox:checked~&__btn &__icon::after {
+        top: 0;
+    }
+    &__checkbox:checked~&__btn &__icon::after {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    &__checkbox:checked~&__btn &__icon::before {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+}

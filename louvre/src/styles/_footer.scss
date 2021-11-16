@@ -1,0 +1,93 @@
+.footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $background-footer;
+    &__container {
+        width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 75px 0 50px 0;
+    }
+    &__icon {
+        font-size: 24px;
+        box-sizing: border-box;
+        border: 1px solid #666666;
+        border-radius: 100px;
+        transition: all 0.6s;
+        padding: 14px;
+        color: #666666;
+        &:hover {
+            transition: all 0.6s;
+            color: #fff;
+        }
+    }
+    &__col {
+        width: 28%;
+    }
+    &__messengers {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+    &__link {
+        display: block;
+        transition: all 0.6s;
+        cursor: pointer;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 2px;
+        color: #FFFFFF;
+        margin-bottom: 25px;
+        &:hover {
+            transition: all 0.6s;
+            color: #e45353;
+        }
+        &-logo {
+            width: auto;
+            display: block;
+            text-align: center;
+        }
+    }
+    &__facebook {
+        padding: 15px 19px;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    @media (max-width: 768px) {
+        padding: 30px 0;
+        &__container {
+            flex-wrap: wrap;
+        }
+        &__col {
+            width: 45%;
+            margin-bottom: 15px;
+        }
+    }
+    @media (max-width: 460px) {
+        &__col {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        &__title {
+            font-size: 16px;
+        }
+        &__ser {
+            font-size: 14px;
+        }
+        &__text {
+            font-size: 15px;
+        }
+        &__list a {
+            font-size: 15px;
+        }
+    }
+}

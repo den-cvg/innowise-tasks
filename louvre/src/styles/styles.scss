@@ -1,0 +1,129 @@
+$background-header: #030303;
+$background-footer: #030303;
+$background-explore:#030303;
+$background-gallery:#030303;
+$body-text: #000000;
+$title-color: #9D8665;
+$color-hover: #fff;
+$color-translucent: #c8c8c8;
+$speed: 0.5s;
+@mixin line-border {
+    height: 3px;
+    background: #710707;
+}
+
+@mixin input-icon {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: -11px;
+        bottom: 0;
+        left: 15px;
+        margin: auto 0;
+        width: 25px;
+        height: 25px;
+        background-size: cover;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38px;
+    color: $body-text;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+select,
+textarea {
+    outline: none;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+}
+
+input[type='radio']::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid rgb(7, 16, 26);
+}
+
+input[type='radio']:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(7, 15, 22);
+    transform: translate(-50%, -50%);
+    visibility: visible;
+}
+
+button {
+    border: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Forum', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.article {
+    min-height: 400px;
+    margin-bottom: -10px;
+}
+
+@import "_header.scss";
+@import "_index.scss";
+@import "_popup.scss";
+@import "_footer.scss";
