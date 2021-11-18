@@ -27,7 +27,7 @@ module.exports = (env) => {
             removeAvailableModules: false,
             removeEmptyChunks: false,
             splitChunks: false,
-            minimize: true,
+            minimize: false,
             minimizer: [new TerserPlugin()],
         },
         module: {

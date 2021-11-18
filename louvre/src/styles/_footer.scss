@@ -28,6 +28,9 @@
     &__col {
         width: 28%;
     }
+    &__navigation-mobile {
+        display: none;
+    }
     &__messengers {
         display: flex;
         flex-direction: column;
@@ -62,21 +65,31 @@
         justify-content: space-between;
         margin-bottom: 15px;
     }
-    @media (max-width: 768px) {
-        padding: 30px 0;
+    @media (max-width: 1700px) {
+        &__logo {
+            width: 22%;
+        }
         &__container {
+            width: 80%;
             flex-wrap: wrap;
+            padding: 62px 0;
+        }
+        &__navigation {
+            width: 20%;
+        }
+    }
+    @media (max-width: 1025px) {
+        &__container {
+            width: 95%;
         }
         &__col {
-            width: 45%;
-            margin-bottom: 15px;
+            width: 33%;
+        }
+        &__navigation {
+            width: 13%;
         }
     }
     @media (max-width: 460px) {
-        &__col {
-            width: 100%;
-            margin-bottom: 15px;
-        }
         &__title {
             font-size: 16px;
         }
@@ -88,6 +101,76 @@
         }
         &__list a {
             font-size: 15px;
+        }
+        &__col {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+    @media (max-width: 770px) {
+        &__container {
+            width: 90%;
+        }
+        &__col {
+            width: 100%;
+        }
+        &__messengers {
+            display: flex;
+            flex-direction: initial;
+        }
+        &__wrapper {
+            width: 58%;
+        }
+        &__logo {
+            width: 22%;
+        }
+        &__navigation {
+            width: 13%;
+        }
+    }
+    @media (max-width: 620px) {
+        &__logo {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        &-link-laptop {
+            display: none;
+        }
+        &__navigation {
+            margin-bottom: 40px;
+        }
+        &__navigation-mobile {
+            display: block;
+        }
+        &__link {
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 2px;
+        }
+    }
+    @media (max-width: 500px) {
+        &__container {
+            padding: 42px 0;
+        }
+        &__wrapper {
+            width: 80%;
+        }
+    }
+    @media (max-width: 421px) {
+        &__slider-item {
+            height: 285px;
+        }
+        &__icon {
+            font-size: 17px;
+            color: #FFFFFF;
+        }
+        &__facebook {
+            padding: 15px 17px;
+        }
+    }
+    @media (max-width: 340px) {
+        &__wrapper {
+            width: 100%;
         }
     }
 }

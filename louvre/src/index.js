@@ -1,15 +1,16 @@
 import './styles/styles.scss';
 
+
 (function smoothAnchor() {
-    const anchors = document.querySelectorAll('a[href*="#"]')
+    const anchors = document.querySelectorAll('a[href*="#"]');
     for (let anchor of anchors) {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault()
-            const blockId = anchor.getAttribute('href').substr(1)
+        anchor.addEventListener('click', (e) => {
+            e.preventDefault();
+            const blockId = anchor.getAttribute('href').substr(1);
             document.getElementById(blockId).scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
-            })
+            });
         })
     }
 })();
@@ -24,10 +25,10 @@ import './styles/styles.scss';
     const popupInputSenior = document.querySelector('.popup__senior');
     const popupInputBasic = document.querySelector('.popup__basic');
     formBlok.addEventListener('click', (e) => {
-        changeValue(e, formInputBasic, formInputSenior)
+        changeValue(e, formInputBasic, formInputSenior);
     });
     popupBlok.addEventListener('click', (e) => {
-        changeValue(e, popupInputBasic, popupInputSenior)
+        changeValue(e, popupInputBasic, popupInputSenior);
     });
 
     function changeValue(e, inputBasic, inputSenior) {
@@ -84,4 +85,31 @@ import './styles/styles.scss';
             hidePopup();
         }
     });
-})()
+})();
+
+(function slider() {
+    $(document).ready(function() {
+        $('.welcome__slider').slick({
+            arrows: true,
+            dots: true,
+            slidesToShow: 1,
+        });
+        $('.video__first').slick({
+            arrows: false,
+            dots: false,
+            slidesToShow: 1,
+        });
+        $('.video__second').slick({
+            arrows: true,
+            dots: true,
+            slidesToShow: 3,
+            asNavFor: ".video__first",
+            responsive: [{
+                breakpoint: 770,
+                settings: {
+                    slidesToShow: 2
+                }
+            }, ]
+        });
+    })
+})();

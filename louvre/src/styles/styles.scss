@@ -1,4 +1,5 @@
 $background-header: #030303;
+$background-welcome: #030303;
 $background-footer: #030303;
 $background-explore:#030303;
 $background-gallery:#030303;
@@ -39,6 +40,14 @@ body {
     font-size: 22px;
     line-height: 38px;
     color: $body-text;
+    @media (max-width: 770px) {
+        font-size: 20px;
+    }
+    @media (max-width: 550px) {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2px;
+    }
 }
 
 a {
@@ -63,8 +72,8 @@ input[type='radio']::before {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 22px;
-    height: 22px;
+    width: 17px;
+    height: 17px;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
@@ -76,8 +85,8 @@ input[type='radio']:checked::after {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 15px;
-    height: 15px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background-color: rgb(7, 15, 22);
     transform: translate(-50%, -50%);
@@ -116,11 +125,31 @@ h3 {
     line-height: 90px;
     letter-spacing: 5px;
     text-transform: uppercase;
+    @media (max-width: 1700px) {
+        font-size: 50px;
+    }
+    @media (max-width: 770px) {
+        font-size: 40px;
+    }
+    @media (max-width: 550px) {
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: 5px;
+    }
 }
 
-.article {
-    min-height: 400px;
-    margin-bottom: -10px;
+.slick-slider {
+    width: 100%;
+    position: relative;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+    justify-content: center;
 }
 
 @import "_header.scss";
