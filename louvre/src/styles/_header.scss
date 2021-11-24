@@ -1,0 +1,187 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: $background-header;
+    &__container {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0 10px 0;
+    }
+    &__logo-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    &__menu {
+        width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__menu-item {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    &__menu-item a {
+        display: inline-block;
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+    }
+    &__menu-link {
+        font-style: normal;
+        font-weight: 200;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 2px;
+        color: #ffff;
+        transition: all 0.6s;
+        &:hover {
+            transition: all 0.6s;
+            color: #e45353;
+        }
+    }
+    @media (max-width: 1700px) {
+        &__container {
+            width: 80%;
+        }
+    }
+    @media (max-width: 1150px) {
+        &__menu {
+            display: none;
+        }
+    }
+    @media (max-width: 1025px) {
+        &__container {
+            width: 95%;
+        }
+    }
+}
+
+.mobile-menu {
+    display: none;
+    z-index: 999999999999;
+    &__btn,
+    &__btn1 {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 30px;
+        cursor: pointer;
+        transition: 0.4s;
+        z-index: 9999999999999999;
+        right: 2%;
+        top: 35px;
+    }
+    &__btn1 {
+        top: 3%;
+    }
+    &-row {
+        margin-left: 20px;
+    }
+    &__icon {
+        display: block;
+        position: relative;
+        background: $color-hover;
+        width: 90%;
+        height: 4px;
+        transition: 0.4s;
+    }
+    &__icon::after,
+    &__icon::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background: $color-hover;
+        width: 100%;
+        height: 4px;
+        transition: 0.4s;
+    }
+    &__icon::after {
+        top: 8px;
+    }
+    &__icon::before {
+        top: -8px;
+    }
+    &__container {
+        height: 0;
+        position: absolute;
+        text-align: start;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        top: 70px;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        opacity: 1;
+        transition: 0.5s;
+        overflow: hidden;
+        background: $background-header;
+        padding-left: 10%;
+    }
+    &__list {
+        transition: 0.5s;
+        list-style: none;
+    }
+    &__item {
+        font-size: 26px;
+        padding-bottom: 25px;
+    }
+    &__link {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 2px;
+        color: #FFFFFF;
+        transition: all 0.6s;
+        &:hover {
+            transform: all 0.6s;
+            color: #e45353;
+        }
+    }
+    &__checkbox {
+        display: none;
+    }
+    &__checkbox:checked~&__nav {
+        opacity: 1;
+    }
+    &__checkbox:checked~&__container {
+        width: 40%;
+        height: 420px;
+    }
+    &__checkbox:checked~&__btn &__icon {
+        background: transparent;
+    }
+    &__checkbox:checked~&__btn &__icon::before,
+    &__checkbox:checked~&__btn &__icon::after {
+        top: 0;
+    }
+    &__checkbox:checked~&__btn &__icon::after {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    &__checkbox:checked~&__btn &__icon::before {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+    @media (max-width: 1150px) {
+        display: block;
+    }
+    @media (max-width: 770px) {
+        &__checkbox:checked~&__container {
+            width: 100%;
+        }
+    }
+    @media (max-width: 550px) {
+        &__checkbox:checked~&__container {
+            height: 330px;
+        }
+    }
+}

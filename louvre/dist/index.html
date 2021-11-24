@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+<script defer src="main.js?1e9301c9a13b370dfd71"></script><link href="main.css?1e9301c9a13b370dfd71" rel="stylesheet"></head>
+
+<body>
+    <div class="popup">
+        <div class="popup__content">
+            <div class="popup__close">
+                <img class=" close-popup" src="./img/Close.png" alt="image">
+            </div>
+            <form class="popup__info">
+                <div class="popup__wrapper">
+                    <img class="popuo__logo" src="./img/popup-logo.png" alt="logo">
+                    <h2 class="popup__name">Booking tickets</h2>
+                    <h4 class="popup__title">Tour to Louvre</h4>
+                    <div class="popup__border"></div>
+                    <span class="popup__span">
+                        <input class="popup__input popup__data" type="date" placeholder="Date">
+                        <input class="popup__input popup__data" type="time">
+                    </span>
+                    <div class="popup__castom-person">
+                        <input class="popup__input" placeholder="Name" type="text">
+                    </div>
+                    <div class="popup__castom-mail">
+                        <input class="popup__input" placeholder="E-mail" type="text">
+                    </div>
+                    <div class="popup__castom-phone">
+                        <input class="popup__input" placeholder="Phone" type="text">
+                    </div>
+                    <div class="popup__castom-ticket">
+                        <select class="popup__input popup__section" name="select2">
+                        <option selected="selected">Ticket Type</option>
+                        <option>Value</option>
+                        </select>
+                    </div>
+
+                    <div class="popup__ticket">
+                        <h3 class="popup__ticket-title">Entry ticket</h3>
+                        <div class="popup__ticket-border"></div>
+                        <div class="popup__ticket-wrapper">
+                            <p class="popup__ticket-text">Basic 18+ (20 €)</p>
+                            <div class="popup__inputs">
+                                <input class="popup__input-button" name="basic" type="button" value="-">
+                                <input class="popup__input-number popup__basic" type="text" value="0">
+                                <input class="popup__input-button" name="basic" type="button" value="+">
+                            </div>
+                        </div>
+                        <div class="popup__ticket-wrapper">
+                            <p class="popup__ticket-text">Senior 65+ (10 €)</p>
+                            <div class="popup__inputs">
+                                <input class="popup__input-button" name="senior" type="button" value="-">
+                                <input class="popup__input-number popup__senior" type="text" value="0">
+                                <input class="popup__input-button" name="senior" type="button" value="+">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="popup__wrapper popup__wrapper-right">
+
+                    <div class="popup__overview">
+                        <div class="popup__overview-info">
+                            <h4 class="popup__overview-name">Overview</h4>
+                            <p class="popup__overview-title">Tour to Louvre</p>
+                            <div class="popup__overview-data">
+                                <img class="popup__overview-icon" src="./img/date.png" alt="icon">
+                                <p class="popup__overview-text">Friday, August 19</p>
+                            </div>
+                            <div class="popup__overview-data">
+                                <img class="popup__overview-icon" src="./img/time.png" alt="icon">
+                                <p class="popup__overview-text">16 : 30</p>
+                            </div>
+                            <div class="popup__overview-data">
+                                <img class="popup__overview-icon" src="./img/Vector (2).png" alt="icon">
+                                <p class="popup__overview-text">Temporary exhibition</p>
+                            </div>
+                        </div>
+                        <img class="popup__overview-image" src="./img/Rectangle 4.png" alt="image">
+                    </div>
+
+                    <div class="popup__price">
+                        <div class="popup__price-point">
+                            <div class="popup__price-description">
+                                <p class="popup__price-text popup__price-number">2</p>
+                                <p class="popup__price-text">Basic (20 €)</p>
+                            </div>
+                            <p class="popup__price-text">40 €</p>
+                        </div>
+                        <div class="popup__price-point">
+                            <div class="popup__price-description">
+                                <p class="popup__price-text popup__price-number">2</p>
+                                <p class="popup__price-text">Senior (10 €)</p>
+                            </div>
+                            <p class="popup__price-text">60 €</p>
+                        </div>
+
+                    </div>
+
+                    <div class="popup__border popup__border-overview "></div>
+
+                    <div class="popup__total">
+                        <p class="popup__totat-text">Total:</p>
+                        <p class="popup__totat-text">60 €</p>
+
+                    </div>
+
+                    <div class="popup__carts">
+                        <div class="popup__front">
+                            <div class="popup__front-info">
+                                <div class="popup__front-inputs">
+                                    <p class="popup__front-label">Card number</p>
+                                    <input class="popup__front-input" type="text">
+                                    <p class="popup__front-label">Expiration date</p>
+                                    <div class="popup__front-row">
+                                        <input class="popup__front-input popup__front-number" type="number">
+                                        <input class="popup__front-input popup__front-number" type="number">
+                                    </div>
+                                </div>
+                                <div class="popup__front-images">
+                                    <img class="popup__front-image" src="./img/Visa.png" alt="image">
+                                    <img class="popup__front-image" src="./img/Mastercard.png" alt="image">
+                                </div>
+                            </div>
+                            <p class="popup__front-label">Cardholder name</p>
+                            <input class="popup__front-input" type="text">
+
+                        </div>
+                        <div class="popup__back">
+                            <div class="popup__front-info popup__back-info">
+                                <label class="popup__front-label">CVC/CVV</label>
+                                <input class="popup__front-input popup__back-input" type="text">
+                                <p class="popup__back-text">The last 3 or 4 digits on back of the card</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="popup__button">Book</button>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo-link">
+                <img src="./img/Logo.png" alt="logo" class="header__logo" />
+            </a>
+
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a href="#visiting" class="header__menu-link">Visiting</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#explore" class="header__menu-link">Explore</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#video" class="header__menu-link">Video</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#gallery" class="header__menu-link">Gallary</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#tickects" class="header__menu-link">Tickets</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#contacts" class="header__menu-link">Contacts</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mobile-menu">
+            <input type="checkbox" id="checkbox" class="mobile-menu__checkbox" />
+            <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div
+          ></label>
+            <div class="mobile-menu__container">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="#visiting" class="mobile-menu__link">Visiting<img class="mobile-menu-row" src="./img/row.png" alt="image"></a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#explore" class="mobile-menu__link">Explore<img class="mobile-menu-row" src="./img/row.png" alt="image"></a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#video" class="mobile-menu__link">Video<img class="mobile-menu-row" src="./img/row.png" alt="image"></a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#gallery" class="mobile-menu__link">Gallary<img class="mobile-menu-row" src="./img/row.png" alt="image"></a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#tickects" class="mobile-menu__link">Tickets<img class="mobile-menu-row" src="./img/row.png" alt="image"></a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="#contacts" class="mobile-menu__link">Contacts<img class="mobile-menu-row" src="./img/row.png" alt="image"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+    </header>
+
+    <main class="article">
+
+        <div class="welcome">
+            <div class="welcome__content">
+                <div class="welcome__info">
+                    <h1 class="welcome__name">Welcome to the Louvre</h1>
+                    <p class="welcome__text">From the castle to the museum</p>
+                    <a class="welcome__link" href="">Discover the Louvre</a>
+                </div>
+                <div class="welcome__slider">
+                    <div class="welcome__slider-item">
+                        <img class="welcome__image" src="./img/1.png" alt="image">
+                    </div>
+                    <div class="welcome__slider-item">
+                        <img class="welcome__image" src="./img/1.png" alt="image">
+                    </div>
+                    <div class="welcome__slider-item">
+                        <img class="welcome__image" src="./img/1.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="visiting" id="visiting">
+            <div class="visiting__content">
+                <h2 class="visiting__title">Virtual tour</h2>
+                <div class="visiting__border"></div>
+                <div class="visiting__info">
+                    <div class="visiting__wrapper">
+                        <img class="visiting__image" src="./img/Rectangle (2).jpg" alt="image">
+                        <h3 class="visiting__name">Greek hall</h3>
+                        <div class="visiting__wrapper-border"></div>
+                        <p class="visiting__text">360° Virtual Tour</p>
+                        <p class="visiting__text">Google Street Panorama View</p>
+                    </div>
+                    <div class="visiting__wrapper">
+                        <img class="visiting__image" src="./img/Rectangle (3).jpg" alt="image">
+                        <h3 class="visiting__name">Mona Lisa</h3>
+                        <div class="visiting__wrapper-border"></div>
+                        <p class="visiting__text">360° Virtual Tour</p>
+                        <p class="visiting__text">Google Street Panorama View</p>
+                    </div>
+                    <div class="visiting__wrapper">
+                        <img class="visiting__image" src="./img/Rectangle (1).jpg" alt="image">
+                        <h3 class="visiting__name">Colonnade Perrault</h3>
+                        <div class="visiting__wrapper-border"></div>
+                        <p class="visiting__text">360° Virtual Tour</p>
+                        <p class="visiting__text">Google Street Panorama View</p>
+                    </div>
+                    <div class="visiting__wrapper">
+                        <img class="visiting__image" src="./img/Rectangle (5).jpg" alt="image">
+                        <h3 class="visiting__name">Royal Palace</h3>
+                        <div class="visiting__wrapper-border"></div>
+                        <p class="visiting__text">360° Virtual Tour</p>
+                        <p class="visiting__text">Google Street Panorama View</p>
+                    </div>
+                    <div class="visiting__wrapper">
+                        <img class="visiting__image" src="./img/Rectangle.jpg" alt="image">
+                        <h3 class="visiting__name">Royal Palace</h3>
+                        <div class="visiting__wrapper-border"></div>
+                        <p class="visiting__text">360° Virtual Tour</p>
+                        <p class="visiting__text">Google Street Panorama View</p>
+                    </div>
+                    <div class="visiting__wrapper">
+                        <img class="visiting__image" src="./img/Rectangle (4).jpg" alt="image">
+                        <h3 class="visiting__name">Night Palace</h3>
+                        <div class="visiting__wrapper-border"></div>
+                        <p class="visiting__text">360° Virtual Tour</p>
+                        <p class="visiting__text">Google Street Panorama View</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="explore" id="explore">
+            <div class="explore__content">
+                <div class="explore__info">
+                    <h2 class="explore__title">Picture explore</h2>
+                    <div class="explore__border"></div>
+                    <p class="explore__text">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
+                    <p class="explore__text">It was cleaned in 1984 to remove a "yellow veil" of dust that had gathered since the previous restoration in the 19th century.</p>
+                    <p class="explore__text explore__desktop">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
+                </div>
+                <img class="explore__image" src="./img/explore-image.png" alt="image">
+            </div>
+        </div>
+
+        <div class="video" id="video">
+            <div class="video__content">
+                <div class="video__info">
+                    <h2 class="video__title">Video journey</h2>
+                    <p class="video__text">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+                </div>
+                <div class="video__sliders">
+                    <div class="video__first">
+                        <iframe class="video__first-item" src="https://www.youtube.com/embed/6vuFh6NNa70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__first-item" src="https://www.youtube.com/embed/FRmvCQM-XGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__first-item" src="https://www.youtube.com/embed/6vuFh6NNa70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__first-item" src="https://www.youtube.com/embed/FRmvCQM-XGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__first-item" src="https://www.youtube.com/embed/6vuFh6NNa70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__first-item" src="https://www.youtube.com/embed/FRmvCQM-XGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video__second">
+                        <iframe class="video__second-item" src="https://www.youtube.com/embed/6vuFh6NNa70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__second-item" src="https://www.youtube.com/embed/FRmvCQM-XGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__second-item" src="https://www.youtube.com/embed/6vuFh6NNa70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__second-item" src="https://www.youtube.com/embed/FRmvCQM-XGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__second-item" src="https://www.youtube.com/embed/6vuFh6NNa70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="video__second-item" src="https://www.youtube.com/embed/FRmvCQM-XGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery" id="gallery">
+            <div class="gallery__content">
+                <h2 class="gallery__title">Art Gallery</h2>
+                <div class="gallery__info">
+                    <div class="gallery__wrapper">
+                        <img class="gallery__image" src="./img/galery2 1.png" alt="image">
+                        <img class="gallery__image" src="./img/galery9 1.png" alt="image">
+                        <img class="gallery__image" src="./img/galery4 1.png" alt="image">
+                        <img class="gallery__image gallery__image-transparent" src="./img/galery6 1.png" alt="image">
+                    </div>
+                    <div class="gallery__wrapper gallery__wrapper-relative">
+                        <img class="gallery__image" src="./img/galery1 1.png" alt="image">
+                        <img class="gallery__image" src="./img/galery8 1.png" alt="image">
+                        <img class="gallery__image" src="./img/galery3 1.png" alt="image">
+                        <img class="gallery__image gallery__image-transparent" src="./img/galery5 1.png" alt="image">
+                    </div>
+                    <div class="gallery__wrapper gallery__wrapper-laptop">
+                        <img class="gallery__image" src="./img/galery7 1.png" alt="image">
+                        <img class="gallery__image" src="./img/galery10 1.png" alt="image">
+                        <img class="gallery__image" src="./img/galery15 1.png" alt="image">
+                        <img class="gallery__image gallery__image-transparent" src="./img/galery12 1.png" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tickects" id="tickects">
+            <div class="tickects__content">
+                <h2 class="tickects__title">BUY TICKETS</h2>
+                <div class="tickects__border"></div>
+                <div class="tickects__info">
+                    <img class="tickects__image" src="./img/tickets.png" alt="image">
+                    <div class="tickects__info-blok">
+                        <form class="tickects__form" action="">
+
+                            <div class="tickects__form-blok">
+                                <h3 class="tickects__form-title">Ticket Type</h3>
+                                <div class="tickets__form-point">
+                                    <input class="tickects__raduo" type="radio" name="drone" value="huey" checked>
+                                    <label class="tickects__raduo-text" for="huey">Huey</label>
+                                </div>
+                                <div class="tickets__form-point">
+                                    <input class="tickects__raduo" type="radio" name="drone" value="dewey">
+                                    <label class="tickects__raduo-text" for="dewey">Dewey</label>
+                                </div>
+                                <div class="tickets__form-point">
+                                    <input class="tickects__raduo" type="radio" name="drone" value="louie">
+                                    <label class="tickects__raduo-text" for="louie">Louie</label>
+                                </div>
+                            </div>
+                            <div class="tickects__form-blok tickects__form-right">
+                                <h3 class="tickects__form-title ">Amount</h3>
+                                <label class="tickects__text">Basic 18+</label>
+                                <div class="tickects__inputs">
+                                    <input class="tickects__input-button" name="basic" type="button" value="-">
+                                    <input class="tickects__input tickects__basic" type="text" value="0">
+                                    <input class="tickects__input-button" name="basic" type="button" value="+">
+                                </div>
+                                <label class="tickects__text">Senior 65+</label>
+                                <div class="tickects__inputs">
+                                    <input class="tickects__input-button" name="senior" type="button" value="-">
+                                    <input class="tickects__input  tickects__senior" type="text" value="0">
+                                    <input class="tickects__input-button" name="senior" type="button" value="+">
+                                </div>
+                                <h3 class="tickects__form-title">Total €</h3>
+                                <input class="tickects__button" type="button" value="Buy Now">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="tickects__background-image"></div>
+        </div>
+
+        <div class="contacts" id="contacts">
+            <div class="contacts__content">
+                <h2 class="contacts__title">Contacts</h2>
+                <div class="contacts__border"></div>
+                <div class="contacts__info">
+                    <div class="contacts__address">
+                        <h4 class="contacts__text">Palais Royal Musee du Louvre</h4>
+                        <div class="contacts__blok-info">
+                            <p>address:</p>
+                            <p class="contacts__link">75001 Paris, France</p>
+                        </div>
+                        <div class="contacts__blok-info">
+                            <p>phone:</p><a class="contacts__link" href="tel:+37500000011">+37500000011</a>
+                        </div>
+                        <div class="contacts__blok-info">
+                            <p>mail:</p><a class="contacts__link" href="mailto:info@louvre.fr">info@louvre.fr</a>
+                        </div>
+                    </div>
+                    <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2350.5919442004106!2d30.337852965828468!3d53.9034563800995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LDRgtGA0LjRg9C8!5e0!3m2!1sru!2sby!4v1636723929855!5m2!1sru!2sby"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__col footer__logo">
+                <a class="footer__logo-link" href="">
+                    <img src="./img/Logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="footer__col footer__navigation">
+                <a class="footer__link" href="#visiting">Visiting</a>
+                <a class="footer__link" href="#explore">Explore</a>
+                <a class="footer__link footer-link-laptop" href="#video">Video</a>
+            </div>
+            <div class="footer__col footer__navigation">
+                <a class="footer__link" href="#gallery">Gallery</a>
+                <a class="footer__link" href="#tickects">Tickets</a>
+                <a class="footer__link footer-link-laptop" href="#contacts">Contacts</a>
+            </div>
+            <div class="footer__navigation-mobile">
+                <a class="footer__link" href="#video">Video</a>
+                <a class="footer__link" href="#contacts">Contacts</a>
+            </div>
+            <div class="footer__col footer__messengers">
+                <div class="footer__wrapper">
+                    <a class="footer__wpapper-link" href=""><i class="fab fa-youtube footer__icon"></i></a>
+                    <a class="footer__wpapper-link" href=""><i class="fab fa-instagram footer__icon"></i></a>
+                    <a class="footer__wpapper-link" href=""><i class="fab fa-facebook-f footer__icon footer__facebook"></i></a>
+                    <a class="footer__wpapper-link" href=""><i class="fab fa-twitter footer__icon"></i></a>
+                    <a class="footer__wpapper-link" href=""><i class="fab fa-pinterest footer__icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="developer">
+            <div class="developer__content">
+                <p class="developer__text">© 2021</p>
+                <a class="developer__link" href="https://innowise-group.com/">Innowise Group</a>
+                <p class="developer__text">Denis Svirko</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" type="text/javascript"></script>
+
+
+</body>
+
+</html>
